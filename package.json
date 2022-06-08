@@ -4,7 +4,7 @@
   "description": "service to consume jsoplaceholder albums data api and feed to mongodb instance using mongoose ODM",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node server.js",
     "start:dev": "nodemon server.js"
   },
@@ -15,11 +15,15 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "joi": "^17.6.0",
-    "node-fetch": "^3.2.5"
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.5",
+    "node-fetch": "^2.6.7"
   },
   "devDependencies": {
     "chai": "^4.3.6",
+    "faker": "^5.5.3",
     "mocha": "^10.0.0",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "sinon": "^14.0.0"
   }
 }
